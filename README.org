@@ -4,5 +4,8 @@ En este repositorio se van recopilando los vídeos del [[https://youtube.com/pla
 que se muestra cómo construir demostraciones con Lean de ejercicios propuestos
 en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
 
+* Contenido                                                             :TOC:
+- [[#teoría-de-conjuntos][Teoría de conjuntos]]
+
 * Teoría de conjuntos
 + Propiedad de monotonía de la intersección ([[./enunciados/Propiedad_de_monotonia_de_la_interseccion.lean][enunciado]], [[./src/Propiedad_de_monotonia_de_la_interseccion.lean][soluciones]] y vídeo).-
