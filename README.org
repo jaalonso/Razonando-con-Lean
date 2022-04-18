@@ -1,5 +1,8 @@
 #+TITLE: Demostrando con Lean
 
-En este repositorio se van recopilando los vídeos del canal ??? en los que se
-muestra cómo construir demostraciones con Lean de ejercicios propuestos en
-[[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
+En este repositorio se van recopilando los vídeos del [[https://youtube.com/playlist?list=PLPIlzBVlfbbEHdxvPaKIq1JbJFxbxT7GW][canal en YouTube]] en los
+que se muestra cómo construir demostraciones con Lean de ejercicios propuestos
+en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
+
+* Teoría de conjuntos
++ Propiedad de monotonía de la intersección ([[./enunciado/Propiedad_de_monotonia_de_la_interseccion.lean][enunciado]], [[./src/Propiedad_de_monotonia_de_la_interseccion.lean][soluciones]] y vídeo).-
