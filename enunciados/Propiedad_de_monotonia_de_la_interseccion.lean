@@ -1,4 +1,4 @@
--- Propiedad_de_monotonia_de_la_interseccion.lean<cod>
+-- Propiedad_de_monotonia_de_la_interseccion.lean
 -- Propiedad de monotonía de la intersección.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 18-abril-2022
