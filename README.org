@@ -5,7 +5,7 @@ En este repositorio se van recopilando los vídeos del [[https://youtube.com/pla
 que se muestra cómo construir demostraciones con Lean de ejercicios propuestos
 en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
 
-Contenido                                                             :TOC:
+* Contenido                                                             :TOC:
 - [[#teoría-de-conjuntos][Teoría de conjuntos]]
 
 * Teoría de conjuntos
