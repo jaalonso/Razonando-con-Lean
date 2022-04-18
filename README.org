@@ -1,0 +1,5 @@
+#+TITLE: Demostrando con Lean
+
+En este repositorio se van recopilando los vídeos del canal ??? en los que se
+muestra cómo construir demostraciones con Lean de ejercicios propuestos en
+[[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
