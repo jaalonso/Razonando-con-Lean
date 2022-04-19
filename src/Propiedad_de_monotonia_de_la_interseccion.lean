@@ -1,7 +1,7 @@
 -- Propiedad_de_monotonia_de_la_interseccion.lean
 -- Propiedad de monotonía de la intersección.
 -- José A. Alonso Jiménez
--- Sevilla, 17 de mayo de 2021
+-- Sevilla, 19 de abril de 2022
 -- ---------------------------------------------------------------------
 
 -- ---------------------------------------------------------------------
