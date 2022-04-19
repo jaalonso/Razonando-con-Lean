@@ -13,6 +13,7 @@
 
 import data.set.basic
 import tactic
+
 open set
 
 variable {α : Type}
@@ -29,13 +30,13 @@ begin
   rw inter_def,
   rw inter_def,
   dsimp,
-  intros x h,
-  cases h with xs xu,
+  intros x h1,
+  cases h1 with xs xu,
   split,
   { rw subset_def at h,
     apply h,
-    assumption },
-  { assumption },
+    exact xs, },
+  { exact xu, },
 end
 
 -- 2ª demostración
@@ -59,8 +60,9 @@ example
   (h : s ⊆ t)
   : s ∩ u ⊆ t ∩ u :=
 begin
-  simp only [subset_def, mem_inter_eq] at *,
+  simp only [subset_def, inter_def, inter_def],
   rintros x ⟨xs, xu⟩,
+  rw subset_def at h,
   exact ⟨h _ xs, xu⟩,
 end
 
