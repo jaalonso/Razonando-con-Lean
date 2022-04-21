@@ -9,4 +9,5 @@ en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
 - [[#teoría-de-conjuntos][Teoría de conjuntos]]
 
 * Teoría de conjuntos
-+ Propiedad de monotonía de la intersección ([[./enunciados/Propiedad_de_monotonia_de_la_interseccion.lean][enunciado]], [[./src/Propiedad_de_monotonia_de_la_interseccion.lean][soluciones]] y [[https://youtu.be/W2_gMDHRehg][vídeo]]).
++ [[./src/Propiedad_de_monotonia_de_la_interseccion.lean][Propiedad de monotonía de la intersección]] ([[https://youtu.be/W2_gMDHRehg][vídeo]]).
++ [[./src/Propiedad_semidistributiva_de_la_interseccion_sobre_la_union.lean][Propiedad semidistributiva de la intersección sobre la unión]].
