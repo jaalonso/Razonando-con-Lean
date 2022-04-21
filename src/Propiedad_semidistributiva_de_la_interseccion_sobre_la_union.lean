@@ -48,28 +48,28 @@ begin
     exact ⟨hxs, hxu⟩, },
 end
 
--- 4ª demostración
+-- 3ª demostración
 -- ===============
 
 example :
   s ∩ (t ∪ u) ⊆ (s ∩ t) ∪ (s ∩ u) :=
 begin
   rintros x ⟨hxs, hxt | hxu⟩,
-  exact or.inl ⟨hxs, hxt⟩,
-  exact or.inr ⟨hxs, hxu⟩,
+  { exact or.inl ⟨hxs, hxt⟩, },
+  { exact or.inr ⟨hxs, hxu⟩, },
 end
 
--- 5ª demostración
+-- 4ª demostración
 -- ===============
 
 example :
   s ∩ (t ∪ u) ⊆ (s ∩ t) ∪ (s ∩ u) :=
 begin
   intros x hx,
-  by finish
+  by finish,
 end
 
--- 6ª demostración
+-- 5ª demostración
 -- ===============
 
 example :
