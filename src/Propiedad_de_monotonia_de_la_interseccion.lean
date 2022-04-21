@@ -103,4 +103,4 @@ inter_subset_inter_left u h
 example
   (h : s ⊆ t)
   : s ∩ u ⊆ t ∩ u :=
-by tidy
+by tidy  
