@@ -1,4 +1,3 @@
--- Propiedad_semidistributiva_de_la_interseccion_sobre_la_union.lean
 -- Propiedad semidistributiva de la intersección sobre la unión
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 21-abril-2022
@@ -10,6 +9,8 @@
 -- ----------------------------------------------------------------------
 
 import data.set.basic
+import tactic
+
 open set
 
 variable {α : Type}
@@ -22,16 +23,16 @@ example :
   s ∩ (t ∪ u) ⊆ (s ∩ t) ∪ (s ∩ u) :=
 begin
   intros x hx,
-  have xs : x ∈ s := hx.1,
-  have xtu : x ∈ t ∪ u := hx.2,
-  clear hx,
-  cases xtu with xt xu,
+  cases hx with hxs hxtu,
+  cases hxtu with hxt hxu,
   { left,
-    show x ∈ s ∩ t,
-    exact ⟨xs, xt⟩ },
+    split,
+    { exact hxs, },
+    { exact hxt, }},
   { right,
-    show x ∈ s ∩ u,
-    exact ⟨xs, xu⟩ },
+    split,
+    { exact hxs, },
+    { exact hxu, }},
 end
 
 -- 2ª demostración
@@ -40,14 +41,25 @@ end
 example :
   s ∩ (t ∪ u) ⊆ (s ∩ t) ∪ (s ∩ u) :=
 begin
-  rintros x ⟨xs, xt | xu⟩,
+  rintros x ⟨hxs, hxt | hxu⟩,
   { left,
-    exact ⟨xs, xt⟩ },
+    exact ⟨hxs, hxt⟩, },
   { right,
-    exact ⟨xs, xu⟩ },
+    exact ⟨hxs, hxu⟩, },
 end
 
--- 3ª demostración
+-- 4ª demostración
+-- ===============
+
+example :
+  s ∩ (t ∪ u) ⊆ (s ∩ t) ∪ (s ∩ u) :=
+begin
+  rintros x ⟨hxs, hxt | hxu⟩,
+  exact or.inl ⟨hxs, hxt⟩,
+  exact or.inr ⟨hxs, hxu⟩,
+end
+
+-- 5ª demostración
 -- ===============
 
 example :
@@ -57,7 +69,7 @@ begin
   by finish
 end
 
--- 4ª demostración
+-- 6ª demostración
 -- ===============
 
 example :
