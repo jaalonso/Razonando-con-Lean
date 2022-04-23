@@ -9,6 +9,6 @@ en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
 - [[#teoría-de-conjuntos][Teoría de conjuntos]]
 
 * Teoría de conjuntos
-+ [[./src/Propiedad_de_monotonia_de_la_interseccion.lean][Propiedad de monotonía de la intersección]] ([[https://youtu.be/W2_gMDHRehg][vídeo]]).
-+ [[./src/Propiedad_semidistributiva_de_la_interseccion_sobre_la_union.lean][Propiedad semidistributiva de la intersección sobre la unión]] ([[https://youtu.be/DRKAjEeeM_8][vídeo]]).
-+ [[./src/Diferencia_de_diferencia_de_conjuntos.lean][Diferencia de diferencia de conjuntos]].
++ [[./src/Propiedad_de_monotonia_de_la_interseccion.lean][Propiedad de monotonía de la intersección]] ([[https://youtu.be/W2_gMDHRehg][vídeo]] y [[https://bit.ly/3K6Fyrh][editor]]).
++ [[./src/Propiedad_semidistributiva_de_la_interseccion_sobre_la_union.lean][Propiedad semidistributiva de la intersección sobre la unión]] ([[https://youtu.be/DRKAjEeeM_8][vídeo]] y [[https://bit.ly/38aIqWR][editor]]).
++ [[./src/Diferencia_de_diferencia_de_conjuntos.lean][Diferencia de diferencia de conjuntos]] (vídeo y [[https://bit.ly/3Owz6xd][editor]]).
