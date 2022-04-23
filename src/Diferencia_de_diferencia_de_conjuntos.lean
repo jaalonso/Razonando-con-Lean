@@ -1,5 +1,5 @@
 -- Diferencia_de_diferencia_de_conjuntos.lean
--- Diferencia de diferencia de conjuntos
+-- Diferencia de diferencia de conjuntos.
 -- José A. Alonso Jiménez <https://jaalonso.github.io>
 -- Sevilla, 23-abril-2022
 -- ---------------------------------------------------------------------
@@ -24,7 +24,7 @@ begin
   cases hx with hxst hxnu,
   cases hxst with hxs hxnt,
   split,
-  { exact hxs },
+  { exact hxs, },
   { dsimp,
     by_contradiction hxtu,
     cases hxtu with hxt hxu,
@@ -33,7 +33,7 @@ begin
     { apply hxnu,
       exact hxu, }},
 end
-  
+
 -- 2ª demostración
 -- ===============
 
@@ -41,21 +41,21 @@ example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
 begin
   rintros x ⟨⟨hxs, hxnt⟩, hxnu⟩,
   split,
-  { exact hxs },
+  { exact hxs, },
   { by_contradiction hxtu,
     cases hxtu with hxt hxu,
     { exact hxnt hxt, },
     { exact hxnu hxu, }},
 end
-  
+
 -- 3ª demostración
 -- ===============
 
 example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
 begin
-  rintros x ⟨⟨xs, xnt⟩, xnu⟩,
-  use xs,
-  rintros (xt | xu),
+  rintros x ⟨⟨hxs, hxnt⟩, hxnu⟩,
+  use hxs,
+  rintros (hxt | hxu),
   { contradiction, },
   { contradiction, },
 end
@@ -65,9 +65,9 @@ end
 
 example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
 begin
-  rintros x ⟨⟨xs, xnt⟩, xnu⟩,
-  use xs,
-  rintros (xt | xu); contradiction, 
+  rintros x ⟨⟨hxs, hxnt⟩, hxnu⟩,
+  use hxs,
+  rintros (hxt | hxu); contradiction,
 end
 
 -- 5ª demostración
@@ -75,8 +75,17 @@ end
 
 example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
 begin
-  intros x xstu,
+  rintros x hx,
   simp at *,
+  finish,
+end
+
+-- 5ª demostración
+-- ===============
+
+example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
+begin
+  rintros x hx,
   finish,
 end
 
@@ -84,19 +93,10 @@ end
 -- ===============
 
 example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
-begin
-  intros x xstu,
-  finish,
-end
+by rw diff_diff
 
 -- 7ª demostración
 -- ===============
 
 example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
-by rw diff_diff
-
--- 8ª demostración
--- ===============
-
-example : (s \ t) \ u ⊆ s \ (t ∪ u) :=
-by tidy 
+by tidy
