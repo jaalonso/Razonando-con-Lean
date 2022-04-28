@@ -55,8 +55,8 @@ begin
   simp,
   split,
   { rintros ⟨xs, ⟨i, xAi⟩⟩,
-    exact ⟨i, xAi, xs⟩, },
-  { rintros ⟨i, xAi, xs⟩,
+    exact ⟨⟨i, xAi⟩, xs⟩, },
+  { rintros ⟨⟨i, xAi⟩, xs⟩,
     exact ⟨xs, ⟨i, xAi⟩⟩ },
 end
 
