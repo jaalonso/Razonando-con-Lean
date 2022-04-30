@@ -57,7 +57,7 @@ begin
   { rintros ⟨xs, ⟨i, xAi⟩⟩,
     exact ⟨⟨i, xAi⟩, xs⟩, },
   { rintros ⟨⟨i, xAi⟩, xs⟩,
-    exact ⟨xs, ⟨i, xAi⟩⟩ },
+    exact ⟨xs, ⟨i, xAi⟩⟩, },
 end
 
 -- 3ª demostración
@@ -65,7 +65,7 @@ end
 
 example : s ∩ (⋃ i, A i) = ⋃ i, (A i ∩ s) :=
 begin
-  ext x,
+  ext,
   finish,
 end
 
@@ -85,4 +85,4 @@ by finish [ext_iff]
 -- ===============
 
 example : s ∩ (⋃ i, A i) = ⋃ i, (A i ∩ s) :=
-by tidy
+by tidy 

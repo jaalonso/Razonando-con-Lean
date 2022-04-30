@@ -13,4 +13,5 @@ en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
 + [[./src/Propiedad_semidistributiva_de_la_interseccion_sobre_la_union.lean][Propiedad semidistributiva de la intersección sobre la unión]] ([[https://youtu.be/DRKAjEeeM_8][vídeo]] y [[https://bit.ly/38aIqWR][editor]]).
 + [[./src/Diferencia_de_diferencia_de_conjuntos.lean][Diferencia de diferencia de conjuntos]] ([[https://youtu.be/lHAC6Vx1aNQ][vídeo]] y [[https://bit.ly/3Owz6xd][editor]]).
 + [[./src/Interseccion_con_su_union.lean][Intersección con su unión]] ([[https://youtu.be/pQ4z5NCE5fU][vídeo]] y [[https://leanprover-community.github.io/lean-web-editor/#url=https://raw.githubusercontent.com/jaalonso/Razonando-con-Lean/main/src/Interseccion_con_su_union.lean][editor]]).
-+ [[./src/Distributiva_de_la_interseccion_respecto_de_la_union_general.lean][Distributiva de la intersección respecto de la unión general]] (vídeo y [[https://bit.ly/3LrENut][editor]]).
++ [[./src/Distributiva_de_la_interseccion_respecto_de_la_union_general.lean][Distributiva de la intersección respecto de la unión general]] ([[https://youtu.be/lYd2xT-G3ZY][vídeo]] y [[https://bit.ly/3LrENut][editor]]).
++ [[./src/Imagen_inversa_de_la_interseccion.lean][Imagen inversa de la intersección]] (vídeo y editor).
