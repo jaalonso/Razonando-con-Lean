@@ -15,3 +15,4 @@ en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
 + [[./src/Interseccion_con_su_union.lean][Intersección con su unión]] ([[https://youtu.be/pQ4z5NCE5fU][vídeo]] y [[https://leanprover-community.github.io/lean-web-editor/#url=https://raw.githubusercontent.com/jaalonso/Razonando-con-Lean/main/src/Interseccion_con_su_union.lean][editor]]).
 + [[./src/Distributiva_de_la_interseccion_respecto_de_la_union_general.lean][Distributiva de la intersección respecto de la unión general]] ([[https://youtu.be/lYd2xT-G3ZY][vídeo]] y [[https://bit.ly/3LrENut][editor]]).
 + [[./src/Imagen_inversa_de_la_interseccion.lean][Imagen inversa de la intersección]] (vídeo y [[https://bit.ly/3F0QZjt][editor]]).
++ [[./src/Imagen_de_la_union.lean][Imagen de la unión]] (vídeo y editor).
