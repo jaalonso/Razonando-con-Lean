@@ -1,6 +1,6 @@
 #+TITLE: Razonando con Lean
 #+OPTIONS: num:t
-
+ 
 En este repositorio se van recopilando los vídeos del [[https://youtube.com/playlist?list=PLPIlzBVlfbbEHdxvPaKIq1JbJFxbxT7GW][canal en YouTube]] en los
 que se muestra cómo construir demostraciones con Lean de ejercicios propuestos
 en [[https://www.glc.us.es/~jalonso/calculemus/][Calculemus]].
